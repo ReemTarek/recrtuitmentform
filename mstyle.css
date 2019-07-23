@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body
+{
+    background-color: #000034;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+
+
+}
+
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+    
+}

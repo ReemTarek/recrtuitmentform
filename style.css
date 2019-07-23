@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body
+{    background-color: #000034;
+    font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+.hero {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    background-image: url("videoblocks-4k-particles-navy-blue-background-loop_bdzxx60yfm_thumbnail-full01.png");
+    background-color: #000034;
+  }
+  .navbar-inner {
+    background:rgb(15, 18, 58);
+}
+.navbar-inner a
+{
+  /*  font-family: 'Times New Roman', Times, serif;*/
+    font-size: 20px;
+}
+ .hero pre {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 5em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000034, #fff, #000034);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 13s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  .about
+  {
+      overflow: hidden;
+      background-color: rgba(22, 67, 126, .2);      height: 75vh;
+
+  }
+  .about h2
+  {
+      margin: 12px;
+      
+border-bottom: rgba(197, 202, 206, 0.5) 1px solid;  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  @media only screen and (min-width : 720px)
+  {
+          .about p {margin-top:20vh;
+        
+      }
+  }
+  card-block .btn-outline-primary {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .card {
+    margin: 20px 0;
+  }
+  
+  /* Flip Cards CSS */
+  .card-container {
+    perspective: 700px;
+  }
+  .card-flip {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    height: auto;
+    transition: all 0.5s ease-out;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border: none;
+  }
+  .card-title h4
+  {
+      font-size: 2.5rem !important;
+  }
+  .card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  
+  .card-flip .front {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-flip .back {
+    position: relative;
+    z-index: 0;
+    transform: rotateY(-180deg);
+  }
+  
+  .card-container:hover .card-flip {
+    transform: rotateY(180deg);
+  }
+  
