@@ -39,7 +39,7 @@ if(preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $name))
     }
     if($valid == false)
     {
-        header("Location:form.php");
+        header("Location:form.html");
     }
 $con = mysqli_connect("remotemysql.com","I8cDh5BTDS","Da3KankhSE","I8cDh5BTDS");
 // Check connection
