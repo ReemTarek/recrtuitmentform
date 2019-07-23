@@ -41,7 +41,7 @@ if(preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $name))
     {
         header("Location:form.php");
     }
-$con = mysqli_connect("http://sql7.freemysqlhosting.net"," sql7299573","EYPBa3BBeh","sql7299573");
+$con = mysqli_connect("remotemysql.com","I8cDh5BTDS","Da3KankhSE","I8cDh5BTDS");
 // Check connection
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
